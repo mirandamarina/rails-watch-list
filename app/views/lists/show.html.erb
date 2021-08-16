@@ -1,2 +1,14 @@
-<h1>Lists#show</h1>
+<h1>Bookmarks (Lists#show)</h1>
 <p>Find me in app/views/lists/show.html.erb</p>
+
+<%= raise %>
+
+
+
+
+
+<%= simple_form_for [@list, @bookmark] do |f| %>
+ <%= f.association :movie %>
+ <%= f.input :comment %>
+ <%= f.button :submit, class: "btn btn-primary" %>
+ <% end %>
